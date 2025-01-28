@@ -29,21 +29,21 @@ directory-name/
 Create urls.py inside the app folder and fill it with a basic pattern:
 `touch urls.py`
 urls.py:
-`from django.urls import path
+```from django.urls import path
 from . import views
 
 urlpatterns = [
   path("", views.index, name="index"),
-]`
+]```
 
 set up the urls.py in the project directory like this:
-`from django.contrib import admin
+```from django.contrib import admin
 from django.urls import include, path
 
 urlpatterns = [
     path("[insert app name]/", include("[insert app name].urls")),
     path("admin/", admin.site.urls),
-]`
+]```
 
 run `python manage.py runserver`
 and go to http://localhost:8000/[insert app name]/
