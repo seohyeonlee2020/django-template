@@ -8,27 +8,34 @@ Enter the following commands into the command shell:
 <br>`python manage.py startapp [app name]`
 
 These commands will bootstrap a django project with a file struture like this:
-<br>directory-name/
-    *manage.py
-    *project-name/
-        *__init__.py
-        *settings.py
-        *urls.py
-        *asgi.py
-        *wsgi.py
-    *app-name/
-    *__init__.py
-    *admin.py
-    *apps.py
-    *migrations/
-        *__init__.py
-    *models.py
-    *tests.py
-    *views.py
-    
+<ul>
+   <li>directory-name/</li>
+   <li>manage.py</li>
+   <li>project-name/</li>
+      <ul>
+      <li>__init__.py</li>
+      <li>settings.py</li>
+      <li>urls.py</li>
+      <li>asgi.py</li>
+      <li>wsgi.py</li>
+      </ul>
+    <li>app-name/</li>
+    <ul>
+      <li>__init__.py</li>
+      <li>admin.py</li>
+      <li>apps.py</li>
+      <li>migrations/</li>
+       <ul>
+        <li>*__init__.py</li>
+      </ul>
+    <li>models.py</li>
+    <li>tests.py</li>
+    <li>views.py</li>
+</ul>
+<br>
 Create urls.py inside the app folder and fill it with a basic pattern:
-<br>`touch urls.py`
-<br>urls.py:
+<br> `touch urls.py`
+<br> urls.py:
 
 ```
 from django.urls import path
