@@ -65,7 +65,8 @@ from django.http import HttpResponse
 
 
 def index(request):
-    return HttpResponse("this has to show up when you go to http://localhost:8000/[insert app name]/ in the next step")
+    return HttpResponse("this has to show up when you go to
+http://localhost:8000/[insert app name]/ in the next step")
 ```
 
 run `python manage.py runserver`
