@@ -26,7 +26,7 @@ These commands will bootstrap a django project with a file struture like this:
       <li>apps.py</li>
       <li>migrations/</li>
        <ul>
-        <li>*__init__.py</li>
+        <li>__init__.py</li>
       </ul>
     <li>models.py</li>
     <li>tests.py</li>
