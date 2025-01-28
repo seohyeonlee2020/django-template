@@ -61,13 +61,11 @@ urlpatterns = [
 set up views.py in the app directory like this:
 
 ```
-from django.urls import path
+from django.http import HttpResponse
 
-from . import views
 
-urlpatterns = [
-    path("", views.[view name], name="[view name]"),
-]
+def index(request):
+    return HttpResponse("this has to show up when you go to http://localhost:8000/[insert app name]/ in the next step")
 ```
 
 run `python manage.py runserver`
