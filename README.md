@@ -9,22 +9,22 @@ Enter the following commands into the command shell:
 
 These commands will bootstrap a django project with a file struture like this:
 <br>directory-name/
-    manage.py
-    project-name/
-        __init__.py
-        settings.py
-        urls.py
-        asgi.py
-        wsgi.py
-    app-name/
-    __init__.py
-    admin.py
-    apps.py
-    migrations/
-        __init__.py
-    models.py
-    tests.py
-    views.py
+    *manage.py
+    *project-name/
+        *__init__.py
+        *settings.py
+        *urls.py
+        *asgi.py
+        *wsgi.py
+    *app-name/
+    *__init__.py
+    *admin.py
+    *apps.py
+    *migrations/
+        *__init__.py
+    *models.py
+    *tests.py
+    *views.py
     
 Create urls.py inside the app folder and fill it with a basic pattern:
 <br>`touch urls.py`
